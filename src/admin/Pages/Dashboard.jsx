@@ -254,7 +254,7 @@ function Dashboard() {
 
               <div className=" shadow-lg border px-10 py-5 w-full mt-8 rounded">
                 {category.map((item, index) => {
-                  const icon = iconmap[item._id.toLowerCase()];
+                  const icon = iconmap[item._id];
                   return (
                     <>
                       <div className="flex justify-between mt-2">
