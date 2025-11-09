@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import { IoIosSend } from "react-icons/io";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { useCallback } from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 Link
-
+const chatref = useRef(null)
 const url = "https://coconaadu-backend.onrender.com";
 // this connects to the backend serv
 const socket = io(url);
@@ -81,6 +81,10 @@ function Chat() {
       setusername(user.username);
     }
   }, []);
+
+  if(chatref.current){
+    chatref.current.scrollIntoView({behaviour : 'smooth'})
+  }
   return (
     <>
       <div className="flex flex-col h-screen ">
@@ -107,7 +111,7 @@ function Chat() {
 
                 return item.sender === username ? (
                   <div className="flex w-full justify-end">
-                    <div
+                    <div ref={chatref}
                       key={item._id}
                       className="shadow-lg rounded  bg-gray-200  inline-block  h-auto p-5 flex flex-col "
                     >
@@ -124,7 +128,7 @@ function Chat() {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex w-full justify-start">
+                  <div  ref={chatref} className="flex w-full justify-start">
                     <div
                       key={item._id}
                       className="shadow-lg rounded   inline-block bg-gray-200 h-auto p-5 flex flex-col "
