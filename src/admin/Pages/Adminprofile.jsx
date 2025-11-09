@@ -84,6 +84,7 @@ function Adminprofile() {
               newpassword: "",
               confirmnewpassword: "",
             });
+            setOpen2(false)
             toast.success("Password updated Successfully", toastConfig);
             setdrawer2(true);
           } else if (res.status === 400) {

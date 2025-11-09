@@ -139,6 +139,7 @@ function Mainprofile() {
             toast.success("Successfully Updated", toastConfig);
             sessionStorage.setItem("user", JSON.stringify(res.data));
             setprofilepicture(res.data);
+            setOpen(false)
           }
         } catch (err) {
           console.log(err);
@@ -154,6 +155,7 @@ function Mainprofile() {
             toast.success("Successfully Updated", toastConfig);
             sessionStorage.setItem("user", JSON.stringify(res.data));
             setprofilepicture(res.data);
+            setOpen(false)
           }
         } catch (err) {
           console.log(err);
@@ -297,6 +299,7 @@ function Mainprofile() {
               setOpen2(false)
               sessionStorage.setItem("user",JSON.stringify(res.data))
               setgoogleauthusers(res.data)
+              setOpen2(false)
             }
             else if(res.status===409){
               toast.error(res.data,toastConfig)
@@ -331,7 +334,7 @@ function Mainprofile() {
             if(res.status===200){
               toast.success("Update Successfull",toastConfig)
               sessionStorage.setItem("user",JSON.stringify(res.data))
-              setOpen(false)
+              setOpen2(false)
               setgoogleauthusers(res.data)
             }
               else if(res.status===400){

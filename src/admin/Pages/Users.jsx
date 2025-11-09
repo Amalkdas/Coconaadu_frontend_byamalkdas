@@ -97,7 +97,7 @@ function Users() {
       </tbody>
     </table>
   ) : (
-    <div className="text-center py-6 text-gray-500 font-semibold">nothing</div>
+    <div className="text-center flex justify-center py-6 text-gray-500 font-semibold">Loading....</div>
   )}
 </div>
 
