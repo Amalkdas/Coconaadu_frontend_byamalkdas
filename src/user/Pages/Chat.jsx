@@ -99,7 +99,7 @@ useEffect(()=>{
         </div>
         <div className=" bg-green-700 flex-col z-10 overflow-y-auto h-screen flex gap-10 p-10  min-w-xl">
           {messages.length === 0 ? (
-            <div>No messages yet</div>
+            <div className="flex justify-center text-white w-full">No messages yet</div>
           ) : (
             <div className="flex flex-col justify-center w-full  gap-10">
               {" "}
