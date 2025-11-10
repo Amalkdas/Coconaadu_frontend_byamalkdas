@@ -107,7 +107,7 @@ useEffect(()=>{
     <>
       <div className="grid-cols-2 flex w-full ">
         <div
-          className='w-[50%] h-screen'
+          className='w-[50%] h-screen fixed'
           key={specificevent?._id}
           style={{ backgroundSize: "cover",backgroundImage:`url("${serverurl}/eventimagepath/${specificevent?.eventimage}")` }}
         >
