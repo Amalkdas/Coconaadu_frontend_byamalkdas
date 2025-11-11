@@ -164,7 +164,7 @@ onClose:()=> nav("/")
                 <input
                   type="text"
                   className="bg-white in border-1 text-xs py-3 mb-5 font-medium placeholder:text-xs ps-3 placeholder:font-semibold"
-                  placeholder="Username ( e.g., ThrissurGeek )"
+                  placeholder="Username"
                   onChange={(e) =>
                     setregisterdetails({
                       ...registerdetails,
