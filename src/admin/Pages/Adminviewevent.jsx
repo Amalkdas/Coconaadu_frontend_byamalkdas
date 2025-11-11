@@ -177,9 +177,9 @@ function Adminviewevent() {
           </Stack>
         </Box>
       </Modal>
-      <div className="grid-cols-2 flex w-full">
+      <div className="grid-cols-2 h-screen flex w-full">
         <div
-          className='w-[50%] h-screen'
+          className='w-[50%] '
           style={{ backgroundSize: "cover",backgroundImage:`url("${serverurl}/eventimagepath/${event?.eventimage}")` }}
         >
           <Link to={"/adminevents"}>
