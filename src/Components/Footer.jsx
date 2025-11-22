@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaRegCopyright } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -87,6 +88,9 @@ function Footer() {
         </div>
         
     </div>
+    </div>
+    <div className='w-full p-3 flex justify-center items-center text-white'>
+        <FaRegCopyright /> 2025 <a href="https://www.linkedin.com/in/amalkdas"> Amal K Das</a> 
     </div>
 </footer>
 
