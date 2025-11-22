@@ -89,8 +89,8 @@ function Footer() {
         
     </div>
     </div>
-    <div className='w-full p-3 flex justify-center items-center text-white'>
-        <FaRegCopyright /> 2025 <a href="https://www.linkedin.com/in/amalkdas"> Amal K Das</a> 
+    <div className='w-full p-3 gap-5 flex justify-center items-center text-white text-sm'>
+        <FaRegCopyright /> 2025 <a className='ml-2' href="https://www.linkedin.com/in/amalkdas"> Amal K Das</a> 
     </div>
 </footer>
 
