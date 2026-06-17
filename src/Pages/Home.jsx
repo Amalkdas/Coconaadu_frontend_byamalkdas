@@ -78,7 +78,7 @@ function Home() {
         <h1 className=" text-xl ">Check Out Latest Events</h1>
 
         <div className="flex flex-wrap py-10 gap-10">
-          {homeevents?.length > 0 ? (
+          { Array.isArray(homeevents) && homeevents?.length > 0 ? (
             homeevents.map((item, index) => {
               return (
                 <div key={item?._id}
