@@ -90,7 +90,7 @@ function Footer() {
     </div>
     </div>
     <div className='w-full p-3 gap-2 flex justify-center items-center text-white text-xs font-semibold'>
-        <FaRegCopyright />  <a className='ml-2' href="https://www.linkedin.com/in/amalkdas"> Amal K Das</a> 
+        <FaRegCopyright /> Coconaadu
     </div>
 </footer>
 

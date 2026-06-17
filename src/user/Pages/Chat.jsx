@@ -6,7 +6,8 @@ import { useCallback } from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 Link
 
-const url = "https://coconaadu-backend.onrender.com";
+const url = import.meta.env.BACKEND_URL ;
+// const url = 'http://localhost:4000'
 // this connects to the backend serv
 const socket = io(url);
 
